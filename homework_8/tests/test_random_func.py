@@ -15,5 +15,8 @@ def test_random_value_success(value):
 
 @pytest.mark.parametrize("value", ["tuple", "lol", "list"])
 def test_random_value_value_error(value):
-    with pytest.raises(ValueError, match=f"not correct value, must be 'int' or 'float', but got: {value}"):
+    with pytest.raises(
+        ValueError,
+        match=f"not correct value, must be 'int' or 'float', but got: {value}",
+    ):
         random_value(value)

@@ -20,4 +20,6 @@ def random_value(value_type: str) -> Optional[int | float]:
         case "float":
             return random.random()
 
-    raise ValueError(f"not correct value, must be 'int' or 'float', but got: {value_type}")
+    raise ValueError(
+        f"not correct value, must be 'int' or 'float', but got: {value_type}"
+    )

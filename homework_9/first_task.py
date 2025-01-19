@@ -11,5 +11,9 @@ def conveyor(num: int, url: str):
         get_request_worker(url=url % str(i))
 
 
-if __name__ == "__main__":
+def main():
     conveyor(6, "https://jsonplaceholder.typicode.com/posts/%s")
+
+
+if __name__ == "__main__":
+    main()
